@@ -1,7 +1,10 @@
 package dojo;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -16,9 +19,19 @@ public class Roll {
         dices.add(value3);
         dices.add(value4);
         dices.add(value5);
+        Map<Integer, Integer> d = new HashMap<>();
+
+        dices.stream().forEach(i -> {
+            if (d.containsKey(i)) {
+
+            } else {
+            }
+        });
+
     }
 
     public Stream<Integer> getOnes() {
         return dices.stream().filter(i -> i == 1);
     }
+
 }

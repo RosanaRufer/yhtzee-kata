@@ -46,4 +46,10 @@ public class Tests {
         Roll roll = new Roll(1, 1, 3, 4, 5);
         assert (game.score(roll, Catrgory.PAIR) == 2);
     }
+
+    @Test
+    public void three_one() throws Exception {
+        Roll roll = new Roll(1, 1, 1, 6, 6);
+        assert (game.score(roll, Catrgory.PAIR) == 12);
+    }
 }

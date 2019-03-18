@@ -17,6 +17,9 @@ public class Game {
         if (category == Catrgory.FOURS) {
             return 4;
         }
+        if (category == Catrgory.PAIR) {
+            return 2;
+        }
         return 0;
     }
 }
