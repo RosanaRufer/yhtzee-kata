@@ -6,7 +6,7 @@ package dojo;
 public class Game {
     public int score(Roll roll, Catrgory category) {
         if (category == Catrgory.ONES) {
-            return 1;
+            return roll.getOnes().mapToInt(i->i.intValue()).sum();
         }
         if (category == Catrgory.TWOS) {
             return 2;
