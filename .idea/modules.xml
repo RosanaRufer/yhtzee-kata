@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yanzee.iml" filepath="$PROJECT_DIR$/.idea/modules/yanzee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yanzee_main.iml" filepath="$PROJECT_DIR$/.idea/modules/yanzee_main.iml" group="yanzee" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yanzee_test.iml" filepath="$PROJECT_DIR$/.idea/modules/yanzee_test.iml" group="yanzee" />
+    </modules>
+  </component>
+</project>
