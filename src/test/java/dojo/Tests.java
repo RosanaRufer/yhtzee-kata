@@ -40,4 +40,10 @@ public class Tests {
         Roll roll = new Roll(1, 1, 3, 4, 5);
         assert (game.score(roll, Catrgory.ONES) == 2);
     }
+
+    @Test
+    public void pair() throws Exception {
+        Roll roll = new Roll(1, 1, 3, 4, 5);
+        assert (game.score(roll, Catrgory.PAIR) == 2);
+    }
 }
