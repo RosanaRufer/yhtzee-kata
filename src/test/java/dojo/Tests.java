@@ -38,6 +38,6 @@ public class Tests {
     @Test
     public void multiple_ones() throws Exception {
         Roll roll = new Roll(1, 1, 3, 4, 5);
-        assert (game.score(roll, Catrgory.FOURS) == 2);
+        assert (game.score(roll, Catrgory.ONES) == 2);
     }
 }
