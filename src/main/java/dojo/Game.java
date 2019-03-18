@@ -11,6 +11,9 @@ public class Game {
         if (category == Catrgory.TWOS) {
             return 2;
         }
+        if (category == Catrgory.THREE) {
+            return 3;
+        }
         return 0;
     }
 }

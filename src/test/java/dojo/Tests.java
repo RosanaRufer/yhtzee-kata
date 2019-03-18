@@ -26,6 +26,12 @@ public class Tests {
     @Test
     public void threes() throws Exception {
         Roll roll = new Roll(1, 2, 3, 4, 5);
-        assert (game.score(roll, Catrgory.ONES) == 1);
+        assert (game.score(roll, Catrgory.THREE) == 3);
+    }
+
+    @Test
+    public void fours() throws Exception {
+        Roll roll = new Roll(1, 2, 3, 4, 5);
+        assert (game.score(roll, Catrgory.FOURS) == 4);
     }
 }

@@ -5,5 +5,5 @@ package dojo;
  */
 public enum Catrgory {
     ONES,
-    TWOS
+    THREE, FOURS, TWOS
 }
