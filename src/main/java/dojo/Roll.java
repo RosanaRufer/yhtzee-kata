@@ -3,35 +3,31 @@ package dojo;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
  * Created by maurizio.pietrantuon on 18/03/2019.
  */
 public class Roll {
-    private List<Integer> dices = new ArrayList<>(5);
+    private HashMap<Integer, Integer> dices = new HashMap<>();
 
     public Roll(int value1, int value2, int value3, int value4, int value5) {
-        dices.add(value1);
-        dices.add(value2);
-        dices.add(value3);
-        dices.add(value4);
-        dices.add(value5);
-        Map<Integer, Integer> d = new HashMap<>();
-
-        dices.stream().forEach(i -> {
-            if (d.containsKey(i)) {
-
-            } else {
-            }
-        });
-
+        addValue(value1);
+        addValue(value2);
+        addValue(value3);
+        addValue(value4);
+        addValue(value5);
     }
 
-    public Stream<Integer> getOnes() {
-        return dices.stream().filter(i -> i == 1);
+    private void addValue(int value1) {
+        if(dices.containsKey(value1)){
+            dices.put(value1, dices.get(value1)+1);
+        } else {
+            dices.put(value1, 1);
+        }
     }
 
+    public Integer getOnes() {
+        return dices.get(1);
+    }
 }
