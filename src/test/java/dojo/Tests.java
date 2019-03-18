@@ -34,4 +34,10 @@ public class Tests {
         Roll roll = new Roll(1, 2, 3, 4, 5);
         assert (game.score(roll, Catrgory.FOURS) == 4);
     }
+
+    @Test
+    public void multiple_ones() throws Exception {
+        Roll roll = new Roll(1, 1, 3, 4, 5);
+        assert (game.score(roll, Catrgory.FOURS) == 2);
+    }
 }

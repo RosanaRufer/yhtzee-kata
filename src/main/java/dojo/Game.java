@@ -14,6 +14,9 @@ public class Game {
         if (category == Catrgory.THREE) {
             return 3;
         }
+        if (category == Catrgory.FOURS) {
+            return 4;
+        }
         return 0;
     }
 }
